@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Suryavanshi - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 105px;
+            background-color: #344955;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .icon {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-color: #50727b;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .icon:hover .tooltip {
+            display: block;
+        }
+
+        .tooltip {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .logout-icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        .person-icon i {
+            position: relative;
+            color: #fff;
+        }
+
+        .icon i {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .icon,
+        .person-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #444;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+
+        }
+
+        .person-icon i {
+            color: #fff;
+
+        }
+
+        .icon i {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Media query for small screens */
+        @media screen and (max-width: 1161px) {
+            .sidebar {
+                width: 60px;
+            }
+
+            .icon {
+                width: 30px;
+                height: 30px;
+            }
+
+            .person-icon {
+                width: 30px;
+                height: 30px;
+            }
+
+            .icon i {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 1161px) {
+
+            .icon,
+            .person-icon {
+                width: 30px;
+                height: 30px;
+            }
+
+            .icon i {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .sidebar {
+                width: 50px;
+            }
+
+            .icon {
+                width: 25px;
+                height: 30px;
+            }
+
+            .person-icon {
+                width: 25px;
+                height: 30px;
+            }
+
+            .icon i {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .icon,
+            .person-icon {
+                width: 25px;
+                height: 30px;
+            }
+
+            .icon i {
+                font-size: 16px;
+            }
+        }
+
+        .daily-routine-icon {
+            position: relative;
+            width: 60px;
+            height: 50px;
+            background-color: #444;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .daily-routine-icon:hover .tooltip {
+            display: block;
+        }
+
+        .daily-routine-icon i {
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .tooltip {
+            display: none;
+            position: absolute;
+            top: calc(100% + 5px);
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #516571;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .hi-message {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="person-icon">
+            <i class="">Mayank Suryavanshi</i>
+        </div>
+        <div class="sidebar-icons">
+            <a href="/assets/timetable/Mayank tt/Mayank-tt.html">
+                <div class="icon exam-icon"><i class="fas fa-graduation-cap"></i><div class="tooltip">Class Schedule </div></div>
+            </a>
+            <a href="/assets/mess-menu/mess-menu.html">
+                <div class="icon menu-icon"><i class="fas fa-bars"></i><div class="tooltip">Mess Menu</div></div>
+            </a>
+            <a href="#">
+                <div class="icon extra-curricular-icon"><i class="fas fa-trophy"></i><div class="tooltip">Extra-curricular</div></div>
+            </a>
+        </div>
+        <a href="Calendar.html" id="logout">
+            <div class="icon logout-icon"><i class="fas fa-sign-out-alt"></i><div class="tooltip">Logout</div></div>
+        </a>
+
+
+    </div>
+
+    <div class="container">
+
+        <div class="left">
+            <div class="calendar">
+                <div class="month">
+                    <i class="fas fa-angle-left prev"></i>
+                    <div class="date">December 2015</div>
+                    <i class="fas fa-angle-right next"></i>
+                </div>
+                <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+                <div class="days"></div>
+                <div class="goto-today">
+                    <div class="goto">
+                        <input type="text" placeholder="mm/yyyy" class="date-input" />
+                        <button class="goto-btn">Go</button>
+                    </div>
+                    <button class="today-btn">Today</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="hi-message">
+                <p>Hi, Mayank Suryavanshi</p>
+            </div>
+            <div class="today-date">
+                <div class="event-day">Wed</div>
+                <div class="event-date">12th December 2022</div>
+            </div>
+            <div class="events"></div>
+            <div class="add-event-wrapper">
+                <div class="add-event-header">
+                    <div class="title">Add Event</div>
+                    <i class="fas fa-times close"></i>
+                </div>
+                <div class="add-event-body">
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Event Name" class="event-name" />
+                    </div>
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Event Time From" class="event-time-from" />
+                    </div>
+                    <div class="add-event-input">
+                        <input type="text" placeholder="Event Time To" class="event-time-to" />
+                    </div>
+                </div>
+                <div class="add-event-footer">
+                    <button class="add-event-btn">Add Event</button>
+                </div>
+            </div>
+        </div>
+        <button class="add-event">
+            <i class="fas fa-plus"></i>
+        </button>
+
+        <div class="daily-routine-icon" onclick="openRoutineModal()">
+            <i class="fas fa-clock"></i>
+            <div class="tooltip">Today's Classes</div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="routineModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRoutineModal()">&times;</span>
+            <div class="routine-container">
+                <h1>CLASSES</h1>
+                <div class="class-item">
+                    <div class="class-name">&#x2022 Discrete Maths</div>
+                    <div class="class-code">AB-320</div>
+                    <div class="class-time">16:25 - 17:55</div>
+                </div>
+                <br><hr>
+                <div class="class-item">
+                    <div class="class-name">&#x2022 Digital Logic design</div>
+                    <div class="class-code">AB-230</div>
+                    <div class="class-time">14:50 - 16:20</div>
+                </div>
+                <br><hr>
+                <div class="class-item">
+                    <div class="class-name">&#x2022 Object Oriented Programming</div>
+                    <div class="class-code">AB-320</div>
+                    <div class="class-time">18:00 - 19:20</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        const personIcon = document.querySelector(".person-icon");
+        const routineModal = document.getElementById("routineModal");
+
+        personIcon.addEventListener("click", function () {
+            this.classList.toggle("active");
+        });
+
+        function openRoutineModal() {
+            routineModal.style.display = "block";
+        }
+
+        function closeRoutineModal() {
+            routineModal.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

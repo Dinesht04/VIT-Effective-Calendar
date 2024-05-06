@@ -37,26 +37,33 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault(); 
     
-    if (username=="Mayank@gmail.com" ){
-       // redirect to login/user
-       router.push('/login/user');
+    if(username == "admin" && password == "admin"){
+      router.push('/login/admin');
     }
-    else if (username=="Shreya@gmail.com") {
-        router.push('/login/admin')
+    else{
+      window.location.href = `/assets/${username}.html`
     }
-    else if (username=="Harsh@gmail.com") {
-      router.push('/login/admin')
-    }
-    else if (username=="Gay@gmail.com") {
-      router.push('/login/admin')
-    }
-    else if (username=="admin@gmail.com") {
-      router.push('/login/admin')
-    }
-     else {
-      setErrorMessage('Invalid username or password');
-      console.log(errorMessage);
-    }
+
+    // if (username=="Mayank@gmail.com" ){
+    //    // redirect to login/user
+    //    router.push('/login/user');
+    // }
+    // else if (username=="Shreya@gmail.com") {
+    //     router.push('/login/admin')
+    // }
+    // else if (username=="Harsh@gmail.com") {
+    //   router.push('/login/admin')
+    // }
+    // else if (username=="Gay@gmail.com") {
+    //   router.push('/login/admin')
+    // }
+    // else if (username=="admin@gmail.com") {
+    //   router.push('/login/admin')
+    // }
+    //  else {
+    //   setErrorMessage('Invalid username or password');
+    //   console.log(errorMessage);
+    // }
   };
 
     return (
@@ -107,12 +114,15 @@ export default function Login() {
               Forgot password?
             </a>
           </div>
+          
           <button
+          
             type="submit"
             className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             Login
           </button>
+          
         </form>
       </div>
     </div>
