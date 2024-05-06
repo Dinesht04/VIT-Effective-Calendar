@@ -262,9 +262,8 @@ function updateEvents(date) {
     }
   });
   if (events === "") {
-    events = `<div class="no-event">
-            <h3>No Events</h3>
-        </div>`;
+    events = `<h1 style="margin-left: 15px;">Write Notes</h1>
+    <input type="text" style="height: 300px; width: 300px; margin-left: 15px;">`;
   }
   eventsContainer.innerHTML = events;
   saveEvents();

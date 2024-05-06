@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="/assets/calc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc-text">
+            <p name="attendance-input" id="attendance-input">0</p>
+        </div>
+        <div class="calc-keys">
+            <button class="operations" onclick="askForAttended()">Attended</button>
+            <button class="operations" onclick="askForTotal()">Total classes</button>
+            <button class="operations" onclick="calculatePercentage()">Percentage</button>
+        </div>
+        <div class="calc-result" id="calc-result">
+            <p name="result-input" id="result-input"></p>
+        </div>
+    </div>
+    <script src="/assets/calc.js"></script>
+</body>
+</html>

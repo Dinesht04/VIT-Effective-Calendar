@@ -72,11 +72,11 @@ export default function Login() {
   
             <div className="flex min-h-screen items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8 rounded-xl bg-white shadow-md p-8">
-        <Image className='ml-16 pl-12' src='/vit_logo.png' 
+        <Image className='ml-4 pl-8' src='/vit_logo.png' 
           height={200}
           width={200}
         />
-      <h1 className="text-2xl font-semibold text-center">Welcome to VIT EF Calender</h1>
+      <h1 className="text-2xl font-semibold text-center">VIT Effective Calender</h1>
         <h1 className="text-2xl font-semibold text-center">Login</h1>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="flex flex-col space-y-2">

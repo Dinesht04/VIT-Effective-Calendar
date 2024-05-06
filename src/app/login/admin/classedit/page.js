@@ -1,10 +1,11 @@
-import { AdminPanel } from "@/components/component/admin-panel";
+import { MessMenu } from "@/components/component/mess-menu";
+
 
 export default function ClassEdit() {
     return (
      
       <div>
-        <AdminPanel/>
+       <MessMenu/>
       </div>
     
     );
