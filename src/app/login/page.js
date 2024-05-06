@@ -1,7 +1,8 @@
 'use client'
 
-import Link from 'next/link'
+import Image from 'next/image';
 
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 
 const ids = [
@@ -28,27 +29,47 @@ const ids = [
 ]
 
 export default function Login() {
-
+  const router = useRouter();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault(); 
-    //write code to redirect to /login/user if id and passwords match from const id.
-    //if ID is admin, redirect to /login/admin 
-    // Input validation (optional but recommended)
     
+    if (username=="Mayank@gmail.com" ){
+       // redirect to login/user
+       router.push('/login/user');
+    }
+    else if (username=="Shreya@gmail.com") {
+        router.push('/login/admin')
+    }
+    else if (username=="Harsh@gmail.com") {
+      router.push('/login/admin')
+    }
+    else if (username=="Gay@gmail.com") {
+      router.push('/login/admin')
+    }
+    else if (username=="admin@gmail.com") {
+      router.push('/login/admin')
+    }
+     else {
+      setErrorMessage('Invalid username or password');
+      console.log(errorMessage);
+    }
   };
 
     return (
         
         <div>
-            Login Page 
-            <h1><Link href='/login/admin'>Login AS Admin</Link></h1>
-            <h1><Link href='/login/user'>Login AS User</Link></h1>
+  
             <div className="flex min-h-screen items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8 rounded-xl bg-white shadow-md p-8">
+        <Image className='ml-16 pl-12' src='/vit_logo.png' 
+          height={200}
+          width={200}
+        />
+      <h1 className="text-2xl font-semibold text-center">Welcome to VIT EF Calender</h1>
         <h1 className="text-2xl font-semibold text-center">Login</h1>
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="flex flex-col space-y-2">

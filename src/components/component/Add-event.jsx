@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button"
 
 export default function AddEvent() {
   return (
-    <div className="max-w-4xl mx-auto my-10 p-8 bg-white shadow rounded-lg">
-      <h1 className="text-4xl font-bold mb-10">Welcome, Admin!</h1>
+    <div className="max-w-4xl mx-10 my-10 p-8 bg-white shadow rounded-lg">
+      <h1 className="text-4xl font-bold mb-10">Manage Your Events:</h1>
       <div className="space-y-8">
         <div>
           <h2 className="text-2xl font-semibold mb-4">May 1, 2024</h2>
