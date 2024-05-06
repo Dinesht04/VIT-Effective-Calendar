@@ -11,7 +11,7 @@ export function AdminPanel() {
       <h1 className="text-4xl font-bold mb-10">Manage your classes here:</h1>
       <div className="space-y-8">
         <div>
-          <h2 className="text-2xl font-semibold mb-4">May 1, 2024</h2>
+          <h2 className="text-2xl font-semibold mb-4">May 6, 2024</h2>
           <div className="flex items-center justify-between mb-2">
             <p className="text-lg">Class 1 - Venue A</p>
             <div className="flex space-x-2">
@@ -28,7 +28,7 @@ export function AdminPanel() {
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold mb-4">May 2, 2024</h2>
+          <h2 className="text-2xl font-semibold mb-4">May 7, 2024</h2>
           <div className="flex items-center justify-between mb-2">
             <p className="text-lg">Class 3 - Venue C</p>
             <div className="flex space-x-2">
@@ -45,7 +45,7 @@ export function AdminPanel() {
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold mb-4">May 3, 2024</h2>
+          <h2 className="text-2xl font-semibold mb-4">May 8, 2024</h2>
           <div className="flex items-center justify-between mb-2">
             <p className="text-lg">Class 5 - Venue E</p>
             <div className="flex space-x-2">
@@ -62,7 +62,7 @@ export function AdminPanel() {
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold mb-4">May 4, 2024</h2>
+          <h2 className="text-2xl font-semibold mb-4">May 9, 2024</h2>
           <div className="flex items-center justify-between mb-2">
             <p className="text-lg">Class 7 - Venue G</p>
             <div className="flex space-x-2">
@@ -79,7 +79,7 @@ export function AdminPanel() {
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold mb-4">May 5, 2024</h2>
+          <h2 className="text-2xl font-semibold mb-4">May 10, 2024</h2>
           <div className="flex items-center justify-between mb-2">
             <p className="text-lg">Class 9 - Venue I</p>
             <div className="flex space-x-2">
@@ -96,7 +96,7 @@ export function AdminPanel() {
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold mb-4">May 6, 2024</h2>
+          <h2 className="text-2xl font-semibold mb-4">May 11, 2024</h2>
           <div className="flex items-center justify-between mb-2">
             <p className="text-lg">Class 11 - Venue K</p>
             <div className="flex space-x-2">
@@ -113,7 +113,7 @@ export function AdminPanel() {
           </div>
         </div>
         <div>
-          <h2 className="text-2xl font-semibold mb-4">May 7, 2024</h2>
+          <h2 className="text-2xl font-semibold mb-4">May 12, 2024</h2>
           <div className="flex items-center justify-between mb-2">
             <p className="text-lg">Class 13 - Venue M</p>
             <div className="flex space-x-2">

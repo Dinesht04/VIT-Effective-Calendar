@@ -8,12 +8,87 @@ import { Input } from "@/components/ui/input"
 
 export function NewEvent() {
   return (
-    (<div className="max-w-4xl mx-auto my-10 p-12 bg-white shadow rounded-lg">
+    <div className="mr-12">
+    (<div className="max-w-4xl mx-auto pr-8 my-10 p-8 bg-white shadow rounded-lg">
       <div className="flex items-center justify-between mb-10">
-        
         <h1 className="text-4xl font-bold">Add Events</h1>
       </div>
       <div className="space-y-8">
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">May 1, 2024</h2>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Input
+                className="flex-1 rounded-md border border-gray-200 px-4 py-2 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50 dark:border-gray-800"
+                placeholder="Add a note" />
+              <Button
+                className="bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 transition-colors"
+                variant="solid">
+                <PlusIcon className="w-4 h-4" />
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">May 2, 2024</h2>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Input
+                className="flex-1 rounded-md border border-gray-200 px-4 py-2 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50 dark:border-gray-800"
+                placeholder="Add a note" />
+              <Button
+                className="bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 transition-colors"
+                variant="solid">
+                <PlusIcon className="w-4 h-4" />
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">May 3, 2024</h2>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Input
+                className="flex-1 rounded-md border border-gray-200 px-4 py-2 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50 dark:border-gray-800"
+                placeholder="Add a note" />
+              <Button
+                className="bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 transition-colors"
+                variant="solid">
+                <PlusIcon className="w-4 h-4" />
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">May 4, 2024</h2>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Input
+                className="flex-1 rounded-md border border-gray-200 px-4 py-2 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50 dark:border-gray-800"
+                placeholder="Add a note" />
+              <Button
+                className="bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 transition-colors"
+                variant="solid">
+                <PlusIcon className="w-4 h-4" />
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 className="text-2xl font-semibold mb-4">May 5, 2024</h2>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Input
+                className="flex-1 rounded-md border border-gray-200 px-4 py-2 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50 dark:border-gray-800"
+                placeholder="Add a note" />
+              <Button
+                className="bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 transition-colors"
+                variant="solid">
+                <PlusIcon className="w-4 h-4" />
+              </Button>
+            </div>
+          </div>
+        </div>
         <div>
           <h2 className="text-2xl font-semibold mb-4">May 6, 2024</h2>
           <div className="flex items-center justify-between">
@@ -44,83 +119,9 @@ export function NewEvent() {
             </div>
           </div>
         </div>
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">May 8, 2024</h2>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Input
-                className="flex-1 rounded-md border border-gray-200 px-4 py-2 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50 dark:border-gray-800"
-                placeholder="Add a note" />
-              <Button
-                className="bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 transition-colors"
-                variant="solid">
-                <PlusIcon className="w-4 h-4" />
-              </Button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">May 9, 2024</h2>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Input
-                className="flex-1 rounded-md border border-gray-200 px-4 py-2 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50 dark:border-gray-800"
-                placeholder="Add a note" />
-              <Button
-                className="bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 transition-colors"
-                variant="solid">
-                <PlusIcon className="w-4 h-4" />
-              </Button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">May 10, 2024</h2>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Input
-                className="flex-1 rounded-md border border-gray-200 px-4 py-2 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50 dark:border-gray-800"
-                placeholder="Add a note" />
-              <Button
-                className="bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 transition-colors"
-                variant="solid">
-                <PlusIcon className="w-4 h-4" />
-              </Button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">May 11, 2024</h2>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Input
-                className="flex-1 rounded-md border border-gray-200 px-4 py-2 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50 dark:border-gray-800"
-                placeholder="Add a note" />
-              <Button
-                className="bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 transition-colors"
-                variant="solid">
-                <PlusIcon className="w-4 h-4" />
-              </Button>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">May 12, 2024</h2>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Input
-                className="flex-1 rounded-md border border-gray-200 px-4 py-2 text-sm focus:border-gray-900 focus:outline-none dark:border-gray-800 dark:bg-gray-950 dark:text-gray-50 dark:border-gray-800"
-                placeholder="Add a note" />
-              <Button
-                className="bg-gray-900 text-white px-4 py-2 hover:bg-gray-800 transition-colors"
-                variant="solid">
-                <PlusIcon className="w-4 h-4" />
-              </Button>
-            </div>
-          </div>
-        </div>
       </div>
     </div>)
+    </div>
   );
 }
 
