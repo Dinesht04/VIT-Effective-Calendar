@@ -1,12 +1,12 @@
 import React from "react";
-import {Helmet} from 'react-helmet'
+// import {Helmet} from 'react-helmet'
 
 const Calendar = () =>{
     return(
         <div>
-        <Helmet>
+        {/* <Helmet>
         <script src="/assets/script.js" type="text/javascript"/>
-         </Helmet>
+         </Helmet> */}
                 <div>
                   <meta charSet="UTF-8" />
                   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
